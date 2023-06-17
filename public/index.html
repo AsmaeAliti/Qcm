@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Qcm</title>
+<link rel=stylesheet href=index.css>
+<link rel=stylesheet href=css/bootstrapcss.css>
+<link rel=stylesheet href=js/bootstrapjs.js>
+<link rel=stylesheet href=js/jquery-3.6.0.min.js>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel=stylesheet>
+</head>
+<body>
+<div class=homePage style=display:block>
+<div class=title>
+<h1><b>QCM</b></h1>
+</div><br>
+<div class="Regles container">
+<h4 style="font-family:'Libre Baskerville',serif;font-size:30px"><strong><i><u> Instructions :</u></i></strong></h4>
+<div class=center>
+<p class=rules>-Ce test contient 30 questions en HTML, CSS et Javscript, pour chaque questions cochez la bonne reponse.
+<br> -Il pour valider le test, il faut repondre au moins a sept questions pour chaque categorie, sinon la note <br> ne sera pas calculer(le score sur 30points). <br>
+-si vous affichez la solution , votre repense sera compter comme fausse.</p>
+</div>
+</div><br>
+<div class=container>
+<div class=row>
+<h4 style="font-family:'Libre Baskerville',serif"><strong>Choisissez une langue pour commencer le test :</strong></h4>
+</div>
+<div class=boutton1>
+<div class="btn btn-lg btn-dark" class=bouttons style=width:400px;font-size:30px onclick=html()>HTML</div>
+</div>
+<div class=boutton2>
+<div class="btn btn-lg btn-dark" class=bouttons style=width:400px;font-size:30px onclick=css()>CSS</div>
+</div>
+<div class=boutton3>
+<div class="btn btn-lg btn-dark" class=bouttons style=width:400px;font-size:30px onclick=Js()>JAVASCRIPT</div>
+</div><br><br><br>
+</div>
+</div>
+<form action="">
+<div class=html style=display:none>
+<div class="container title">
+<h1>HTML</h1>
+</div>
+<div class="container background">
+<div id=counter1 style=opacity:.4>
+</div>
+<hr><br>
+<h3 class=textQuestHTML>
+</h3>
+<br>
+<div class="row ligneRadio">
+<input type=radio name=questionHtml class="col-1 radButton" id=0 style=margin-top:13px><input class="form-control col-md-7 optionsPositionHTML" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionHtml class="col-1 radButton" id=1 style=margin-top:13px><input class="form-control col-md-7 optionsPositionHTML" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionHtml class="col-1 radButton" id=2 style=margin-top:13px><input class="form-control col-md-7 optionsPositionHTML" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionHtml class="col-1 radButton" id=3 style=margin-top:13px><input class="form-control col-md-7 optionsPositionHTML" readonly>
+</div>
+<img src=lamp-35376.png onclick=HelpHTML() class=lamp alt=""><span id=helpHTML></span>
+<div class=checkSuivant>
+<b><span id=correctFalseHTML></span></b><br>
+<span id=ifFalseHTML style=display:none;color:red>la repense correcte est : <span id=correctAnswerHTML></span></span>
+<input type=button class="btn btn-light btn-lg" id=btnChecked1 onclick=checkedHtml() value=Checked>
+<input class="btn btn-dark btn-lg" onclick=suivantHTML() id=bntSuivant1 value=Suivant type=button>
+</div>
+</div>
+<br><br><br>
+</div>
+</form>
+<form action="">
+<div class=css style=display:none>
+<div class="container title">
+<h1>CSS</h1>
+</div>
+<div class="container background">
+<div id=counter2 style=opacity:.5>
+</div>
+<hr>
+<h3 class=textQuestCSS>
+</h3>
+<div class="row ligneRadio">
+<input type=radio name=questionCss class="col-1 radButton" id=0 style=margin-top:13px><input class="form-control col-md-7 optionsPositionCSS" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionCss class="col-1 radButton" id=1 style=margin-top:13px><input class="form-control col-md-7 optionsPositionCSS" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionCss class="col-1 radButton" id=2 style=margin-top:13px><input class="form-control col-md-7 optionsPositionCSS" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionCss class="col-1 radButton" id=3 style=margin-top:13px><input class="form-control col-md-7 optionsPositionCSS" readonly>
+</div>
+<img src=lamp-35376.png onclick=HelpCSS() class=lamp alt=""><span id=helpCSS></span>
+<div class=checkSuivant>
+<b><span id=correctFalseCSS></span></b><br>
+<span id=ifFalseCSS style=display:none;color:red>la reponse correcte est : <span id=correctAnswerCSS></span></span>
+<input type=button class="btn btn-light btn-lg" id=btnChecked2 onclick=checkedCSS() value=Checked>
+<input type=button class="btn btn-dark btn-lg" id=bntSuivant2 onclick=suivantCSS() value=Suivant><br><br><br>
+</div>
+</div>
+<br><br><br>
+</div>
+</form>
+<form action="">
+<div class=js style=display:none>
+<div class="container title">
+<h1>JAVASCRIPT</h1>
+</div>
+<div class="container background">
+<div id=counter3 style=opacity:.5>
+</div>
+<hr>
+<h3 class=textQuestJS>
+</h3>
+<div class="row ligneRadio">
+<input type=radio name=questionJs class="col-1 radButton" id=0 style=margin-top:13px><input class="form-control col-md-7 optionsPositionJS" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionJs class="col-1 radButton" id=1 style=margin-top:13px><input class="form-control col-md-7 optionsPositionJS" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionJs class="col-1 radButton" id=2 style=margin-top:13px><input class="form-control col-md-7 optionsPositionJS" readonly>
+</div>
+<div class="row ligneRadio">
+<input type=radio name=questionJs class="col-1 radButton" id=3 style=margin-top:13px><input class="form-control col-md-7 optionsPositionJS" readonly>
+</div>
+<img src=lamp-35376.png onclick=HelpJS() class=lamp alt=""><span id=helpJS></span>
+<div class=checkSuivant>
+<span id=correctFalseJS></span><br>
+<span id=ifFalseJS style=display:none;color:red>la reponse correcte est : <span id=correctAnswerJS></span></span>
+<input type=button class="btn btn-light btn-lg" id=btnChecked3 onclick=checkedJS() value=Checked>
+<input type=button class="btn btn-dark btn-lg" id=bntSuivant3 onclick=suivantJS() value=Suivant>
+</div>
+</div>
+<br><br><br><br>
+</div>
+</form>
+<div class=end style=display:none>
+<div class="container text-center">
+<h2 id=results style=padding-top:100px></h2><br>
+<h4><span id=score></span></h4>
+<h4 id=msg></h4>
+<table class="table mx-auto table-condensed table-striped w-75 table-hover" border=1 style=display:none id=scoreTable>
+<tr>
+<td>Bonnes reponses</td>
+<td id=br></td>
+</tr>
+<tr>
+<td>Fausse réponses</td>
+<td id=fr></td>
+</tr>
+<tr>
+<td>Score en pourcentage</td>
+<td id=sp></td>
+</tr>
+<tr>
+<td>Score</td>
+<td id=sc></td>
+</tr>
+</table>
+<br><br>
+<div class=endBouttons>
+<span class="btn btn-dark btn-lg" style=margin-right:20px onclick=backHome()>Retour à l'acceuil</span>
+<span class="btn btn-secondary btn-lg" onclick=tryAgain()>Ressayer</span>
+</div>
+</div>
+</div>
+</body>
+<script src=index.js></script>
+</html>

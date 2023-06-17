@@ -1,0 +1,103 @@
+h1 {
+  font-size: 8rem !important;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: -1px 1px 0 #000
+}
+
+.center {
+  padding-left: 100px
+}
+
+.title {
+  text-align: center;
+  font-family: 'Playfair Display', serif
+}
+
+.homePage,
+.html,
+.css,
+.js {
+  background-image: url(733863.jpg);
+  height: 100vh;
+}
+
+.boutton1,
+.boutton2,
+.boutton3 {
+  text-align: center;
+  margin: 15px auto 15px auto
+}
+
+.background {
+  background-color: #C8C8C8
+}
+
+.Regles {
+  border: .5px #000 solid;
+  border-radius: 15px;
+  padding: 20px
+}
+
+.form-control {
+  display: inline !important
+}
+
+.ligneRadio {
+  margin-bottom: 35px
+}
+
+.radButton {
+  margin-left: 10%
+}
+
+.background {
+  border-radius: 25px;
+  padding: 30px 0 30px 0
+}
+
+.checkSuivant {
+  display: flex;
+  justify-content: end
+}
+
+.checkSuivant .btn {
+  margin-right: 30px
+}
+
+.lamp {
+  height: 50px;
+  cursor: pointer
+}
+
+#correctFalseHTML,
+#correctFalseCSS {
+  margin-right: 100px;
+  font-size: 20px
+}
+
+#helpHTML,
+#helpCSS {
+  padding: 12px 10px 15px 10px;
+  margin-left: -11px;
+  border-radius: 0 30px 30px 0;
+  color: #59585a
+}
+
+.rules {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: 'Tiro Devanagari Marathi', serif
+}
+
+#results {
+  font-size: 120px;
+  font-weight: 800px;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 2px 2px rgb(209, 188, 188)
+}
+
+.end {
+  height: 100vh
+}
