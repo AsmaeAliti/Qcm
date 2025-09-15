@@ -257,6 +257,8 @@ function suivantHTML() {
     showHelpHtml.style.backgroundColor = "#C8C8C8"
     // showHelpHtml.style.display = "none"
     showHelpHtml.innerText = ""
+    
+    document.getElementById("html_form").reset();
     if (counter < qcmHTML.length) {
         var qcmData = qcmHTML[counter]
         // putting the question in it place 
@@ -398,6 +400,7 @@ function suivantCSS(){
     // }
     showHelpCss.style.backgroundColor = "#C8C8C8"
     showHelpCss.innerText = ""
+    document.getElementById("css_form").reset();
 
     
     if (counter < qcmCSS.length) {
@@ -528,6 +531,8 @@ function suivantJS() {
     showHelpJs.style.backgroundColor = "#C8C8C8"
     // showHelpHtml.style.display = "none"
     showHelpJs.innerText = ""
+    document.getElementById("js_form").reset();
+
     if (counter < qcmJs.length) {
         var qcmData = qcmJs[counter]
         // putting the question in it place 

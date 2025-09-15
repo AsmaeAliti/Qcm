@@ -13,13 +13,9 @@ h1 {
   text-align: center;
   font-family: 'Playfair Display', serif
 }
-
-.homePage,
-.html,
-.css,
-.js {
+body {
   background-image: url(733863.jpg);
-  height: 100vh;
+  height:100%;
 }
 
 .boutton1,
